@@ -87,6 +87,34 @@ ULTIMO_JOGO = {
     "Portugal": 17, "RD Congo": 17, "Uzbequistão": 17, "Colômbia": 17, "Inglaterra": 17, "Croácia": 17, "Gana": 17, "Panamá": 17
 }
 
+# Odds de mercado reais para a 2ª rodada (mesclagem bayesiana)
+ODDS_MERCADO = {
+    ("Tchéquia", "África do Sul"): {"vitoria_a": 1.75, "empate": 2.80, "vitoria_b": 3.80},
+    ("México", "Coreia do Sul"): {"vitoria_a": 2.00, "empate": 3.20, "vitoria_b": 3.80},
+    ("Suíça", "Bósnia e Herzegovina"): {"vitoria_a": 1.65, "empate": 3.10, "vitoria_b": 4.75},
+    ("Canadá", "Catar"): {"vitoria_a": 1.28, "empate": 5.70, "vitoria_b": 11.00},
+    ("Escócia", "Marrocos"): {"vitoria_a": 5.25, "empate": 3.50, "vitoria_b": 1.83},
+    ("Brasil", "Haiti"): {"vitoria_a": 1.09, "empate": 11.00, "vitoria_b": 22.00},
+    ("EUA", "Austrália"): {"vitoria_a": 1.63, "empate": 3.60, "vitoria_b": 4.85},
+    ("Turquia", "Paraguai"): {"vitoria_a": 2.12, "empate": 3.20, "vitoria_b": 3.50},
+    ("Alemanha", "Costa do Marfim"): {"vitoria_a": 1.53, "empate": 4.20, "vitoria_b": 5.70},
+    ("Equador", "Curaçao"): {"vitoria_a": 1.13, "empate": 8.50, "vitoria_b": 20.00},
+    ("Holanda", "Suécia"): {"vitoria_a": 1.68, "empate": 3.80, "vitoria_b": 4.80},
+    ("Tunísia", "Japão"): {"vitoria_a": 7.00, "empate": 4.20, "vitoria_b": 1.63},
+    ("Bélgica", "Irã"): {"vitoria_a": 1.45, "empate": 4.20, "vitoria_b": 7.00},
+    ("Nova Zelândia", "Egito"): {"vitoria_a": 4.50, "empate": 3.40, "vitoria_b": 1.85},
+    ("Espanha", "Arábia Saudita"): {"vitoria_a": 1.11, "empate": 9.50, "vitoria_b": 28.50},
+    ("Uruguai", "Cabo Verde"): {"vitoria_a": 1.45, "empate": 4.00, "vitoria_b": 7.50},
+    ("França", "Iraque"): {"vitoria_a": 1.10, "empate": 9.00, "vitoria_b": 25.00},
+    ("Noruega", "Senegal"): {"vitoria_a": 1.85, "empate": 3.50, "vitoria_b": 4.20},
+    ("Argentina", "Áustria"): {"vitoria_a": 1.35, "empate": 4.80, "vitoria_b": 8.50},
+    ("Jordânia", "Argélia"): {"vitoria_a": 4.80, "empate": 3.60, "vitoria_b": 1.75},
+    ("Portugal", "Uzbequistão"): {"vitoria_a": 1.25, "empate": 5.80, "vitoria_b": 11.50},
+    ("Colômbia", "RD Congo"): {"vitoria_a": 1.45, "empate": 4.20, "vitoria_b": 7.00},
+    ("Inglaterra", "Gana"): {"vitoria_a": 1.25, "empate": 5.80, "vitoria_b": 11.50},
+    ("Panamá", "Croácia"): {"vitoria_a": 5.50, "empate": 3.80, "vitoria_b": 1.63}
+}
+
 # 24 Confrontos da 2ª Rodada
 jogos_rodada2 = [
     # Grupo A
@@ -174,8 +202,11 @@ for grupo, t_a, t_b, stadium, dia_jogo, temp in jogos_rodada2:
     rest_a = dia_jogo - ULTIMO_JOGO[t_a]
     rest_b = dia_jogo - ULTIMO_JOGO[t_b]
     
+    # Recupera odds do confronto
+    odds = ODDS_MERCADO.get((t_a, t_b))
+    
     P, la, lb = model.predict_probabilities(
-        t_a, t_b,
+        t_a, t_b, odds_mercado=odds, w_modelo=0.60,
         distancia_a=dist_a, rest_a=rest_a, temp=temp,
         distancia_b=dist_b, rest_b=rest_b
     )
@@ -201,7 +232,7 @@ for grupo, t_a, t_b, stadium, dia_jogo, temp in jogos_rodada2:
     placares_sorted = sorted(placares_sorted, key=lambda val: val[1], reverse=True)
     
     res = model.get_top_scores(
-        t_a, t_b,
+        t_a, t_b, odds_mercado=odds, w_modelo=0.60,
         distancia_a=dist_a, rest_a=rest_a, temp=temp,
         distancia_b=dist_b, rest_b=rest_b
     )
@@ -237,7 +268,7 @@ report_path = "/Users/raphaelramos/.gemini/antigravity/brain/a77bb963-70eb-4548-
 
 with open(report_path, "w", encoding="utf-8") as f:
     f.write("# 📊 Relatório Preditivo: 2ª Rodada da Copa do Mundo FIFA 2026\n\n")
-    f.write(f"Este relatório apresenta uma análise estatística e tática detalhada para todas as 24 partidas da segunda rodada da fase de grupos da Copa do Mundo FIFA 2026. A metodologia preditiva foi calibrada utilizando as 24 partidas concluídas da 1ª rodada (com peso estendido através de regularização mais leve `reg_lambda=1.5` e sintonização do fator global de gols `mu={model.mu:.4f}` para refletir a alta taxa de gols de 3.125 por partida observada na rodada inicial).\n\n")
+    f.write(f"Este relatório apresenta uma análise estatística e tática detalhada para todas as 24 partidas da segunda rodada da fase de grupos da Copa do Mundo FIFA 2026. A metodologia preditiva foi calibrada utilizando as 24 partidas concluídas da 1ª rodada (com peso estendido através de regularização mais leve `reg_lambda=1.5` e sintonização do fator global de gols `mu={model.mu:.4f}`). Adicionalmente, este relatório incorpora as **odds reais de mercado das casas de apostas** através de uma fusão bayesiana (peso de 60% para o modelo estatístico e 40% para as cotações implícitas do mercado), maximizando o Valor Esperado (EV) dos palpites para o bolão.\n\n")
     f.write("---\n\n")
     f.write("## 📅 Resumo dos Palpites (Tabela Rápida para o Bolão)\n\n")
     f.write("| Grupo | Confronto | Local / Estádio | Status | Palpite Preditivo | Confiança | EV Otimizado |\n")
