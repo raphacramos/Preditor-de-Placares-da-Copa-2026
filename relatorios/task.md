@@ -1,0 +1,7 @@
+- `[x]` Atualizar `modelo_avancado_copa.py` com o parâmetro `mu` e reg_lambda de 1.5
+- `[x]` Atualizar `recalibrador_placares.py` para utilizar `model.mu`
+- `[x]` Atualizar `simulador_campeao_copa.py` para utilizar `model.mu` e reg_lambda de 1.5
+- `[x]` Criar `aplicar_novos_palpites_rodada2.py`
+- `[x]` Executar `aplicar_novos_palpites_rodada2.py` para gerar palpites da 2ª Rodada
+- `[x]` Validar consistência do parâmetro `mu` e dos palpites gerados
+- `[x]` Atualizar walkthrough de validação em `walkthrough.md`
