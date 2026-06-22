@@ -85,3 +85,25 @@ Para a transição para a **2ª Rodada**, executamos as seguintes melhorias base
 4.  **Flexibilização de Palpites de Goleada:** Expandimos o limite de gols na busca de EV do bolão de `3` para `4` gols. Isso permitiu que o modelo recomende com segurança placares como **4 x 0** para confrontos muito desequilibrados (como Brasil vs. Haiti e França vs. Iraque), maximizando o Valor Esperado sob as novas regras de pontuação (30 pts placar exato, 20 pts vencedor + gols do vencedor).
 5.  **Geração dos Palpites:** O script `aplicar_novos_palpites_rodada2.py` executou com sucesso e gerou a análise completa em [palpites_copa_2026_rodada2.md](file:///Users/raphaelramos/.gemini/antigravity/brain/a77bb963-70eb-4548-8861-b9634d4cd31e/palpites_copa_2026_rodada2.md).
 
+---
+
+## 📈 Atualização de Resultados Reais da 2ª Rodada (Hoje: 22 de Junho)
+
+Atualizamos a base de dados com as 16 partidas da segunda rodada que já foram disputadas (de 18 a 21 de junho):
+
+1. **Fusão de Resultados:** Acrescentamos os 16 novos jogos ao vetor `JOGOS_CONCLUIDOS` em `modelo_avancado_copa.py` e deslocamos a idade dos jogos da 1ª rodada em `+4` dias para manter o decaimento temporal preciso em relação à data atual (22/Jun).
+2. **Nova Calibração do Modelo (40 Jogos):** O modelo Dixon-Coles calibrado com a base expandida reavaliou os parâmetros. O multiplicador de volume de gols `mu` ajustou-se para **1.4313**, sinalizando uma tendência contínua de placares de alto volume na Copa de 2026.
+3. **Avaliação de Performance no Bolão (Primeiros 16 Jogos):**
+   - **Pontos Acumulados:** **185 pontos** em 16 jogos (média excelente de **11.56 pontos/jogo**).
+   - **Aproveitamento de Desfechos (Secos):** **68.8%** de acerto sobre o resultado final (vitória/empate/derrota).
+   - **Destaques:**
+     - **Alemanha 2 x 1 Costa do Marfim:** Acerto de placar exato (**30 pontos**).
+     - **EUA 2 x 0 Austrália:** Acerto de vencedor e gols do vencedor (**20 pontos**).
+     - Outros **9 confrontos** renderam **15 pontos** de vitória seca (México, Suíça, Canadá, Marrocos, Brasil, Holanda, Japão, Egito e Espanha).
+4. **Previsões Recalculadas para os 8 Jogos Restantes:**
+   - O modelo recalculou os palpites ideais de EV sob os novos pesos ajustados. Algumas previsões mudaram:
+     - **Colômbia vs. RD Congo:** Ajustado de `2 x 0` para `2 x 1` (EV: 10.82 pts).
+     - **Inglaterra vs. Gana:** Ajustado de `3 x 0` para `3 x 1` (EV: 13.16 pts).
+     - Os demais confrontos mantiveram suas previsões iniciais por consistência estatística de alta margem.
+5. **Git Sync:** O repositório remoto foi atualizado com sucesso e todos os códigos de automação (`atualizar_modelo_rodada2.py` e `atualizar_relatorio_final_rodada2.py`) foram incluídos.
+
