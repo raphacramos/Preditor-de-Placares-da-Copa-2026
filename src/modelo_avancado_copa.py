@@ -70,46 +70,54 @@ BASE_PRIORS = {
 
 # Jogos concluídos até o momento (Copa do Mundo 2026)
 JOGOS_CONCLUIDOS = [
-    {"time_a": "México", "time_b": "África do Sul", "gols_a": 2, "gols_b": 0, "dias_atras": 11, "e_co_host_a": True, "e_co_host_b": False},
-    {"time_a": "Coreia do Sul", "time_b": "Tchéquia", "gols_a": 2, "gols_b": 1, "dias_atras": 10, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Canadá", "time_b": "Bósnia e Herzegovina", "gols_a": 1, "gols_b": 1, "dias_atras": 10, "e_co_host_a": True, "e_co_host_b": False},
-    {"time_a": "EUA", "time_b": "Paraguai", "gols_a": 4, "gols_b": 1, "dias_atras": 10, "e_co_host_a": True, "e_co_host_b": False},
-    {"time_a": "Catar", "time_b": "Suíça", "gols_a": 1, "gols_b": 1, "dias_atras": 9, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Brasil", "time_b": "Marrocos", "gols_a": 1, "gols_b": 1, "dias_atras": 9, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Austrália", "time_b": "Turquia", "gols_a": 2, "gols_b": 0, "dias_atras": 8, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Haiti", "time_b": "Escócia", "gols_a": 0, "gols_b": 1, "dias_atras": 8, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Alemanha", "time_b": "Curaçao", "gols_a": 7, "gols_b": 1, "dias_atras": 8, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Holanda", "time_b": "Japão", "gols_a": 2, "gols_b": 2, "dias_atras": 8, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Costa do Marfim", "time_b": "Equador", "gols_a": 1, "gols_b": 0, "dias_atras": 8, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Suécia", "time_b": "Tunísia", "gols_a": 5, "gols_b": 1, "dias_atras": 8, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Espanha", "time_b": "Cabo Verde", "gols_a": 0, "gols_b": 0, "dias_atras": 7, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Bélgica", "time_b": "Egito", "gols_a": 1, "gols_b": 1, "dias_atras": 7, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Uruguai", "time_b": "Arábia Saudita", "gols_a": 1, "gols_b": 1, "dias_atras": 7, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Irã", "time_b": "Nova Zelândia", "gols_a": 2, "gols_b": 2, "dias_atras": 7, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "França", "time_b": "Senegal", "gols_a": 3, "gols_b": 1, "dias_atras": 6, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Iraque", "time_b": "Noruega", "gols_a": 1, "gols_b": 4, "dias_atras": 6, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Argentina", "time_b": "Argélia", "gols_a": 3, "gols_b": 0, "dias_atras": 6, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Áustria", "time_b": "Jordânia", "gols_a": 3, "gols_b": 1, "dias_atras": 6, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Portugal", "time_b": "RD Congo", "gols_a": 1, "gols_b": 1, "dias_atras": 5, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Uzbequistão", "time_b": "Colômbia", "gols_a": 1, "gols_b": 3, "dias_atras": 5, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Inglaterra", "time_b": "Croácia", "gols_a": 4, "gols_b": 2, "dias_atras": 5, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Gana", "time_b": "Panamá", "gols_a": 1, "gols_b": 0, "dias_atras": 5, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Tchéquia", "time_b": "África do Sul", "gols_a": 1, "gols_b": 1, "dias_atras": 4, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "México", "time_b": "Coreia do Sul", "gols_a": 1, "gols_b": 0, "dias_atras": 4, "e_co_host_a": True, "e_co_host_b": False},
-    {"time_a": "Suíça", "time_b": "Bósnia e Herzegovina", "gols_a": 4, "gols_b": 1, "dias_atras": 4, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Canadá", "time_b": "Catar", "gols_a": 6, "gols_b": 0, "dias_atras": 4, "e_co_host_a": True, "e_co_host_b": False},
-    {"time_a": "Escócia", "time_b": "Marrocos", "gols_a": 0, "gols_b": 1, "dias_atras": 3, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Brasil", "time_b": "Haiti", "gols_a": 3, "gols_b": 0, "dias_atras": 3, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "EUA", "time_b": "Austrália", "gols_a": 2, "gols_b": 0, "dias_atras": 3, "e_co_host_a": True, "e_co_host_b": False},
-    {"time_a": "Turquia", "time_b": "Paraguai", "gols_a": 0, "gols_b": 1, "dias_atras": 3, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Alemanha", "time_b": "Costa do Marfim", "gols_a": 2, "gols_b": 1, "dias_atras": 2, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Equador", "time_b": "Curaçao", "gols_a": 0, "gols_b": 0, "dias_atras": 2, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Holanda", "time_b": "Suécia", "gols_a": 5, "gols_b": 1, "dias_atras": 2, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Tunísia", "time_b": "Japão", "gols_a": 0, "gols_b": 4, "dias_atras": 2, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Bélgica", "time_b": "Irã", "gols_a": 0, "gols_b": 0, "dias_atras": 1, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Nova Zelândia", "time_b": "Egito", "gols_a": 1, "gols_b": 3, "dias_atras": 1, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Espanha", "time_b": "Arábia Saudita", "gols_a": 4, "gols_b": 0, "dias_atras": 1, "e_co_host_a": False, "e_co_host_b": False},
-    {"time_a": "Uruguai", "time_b": "Cabo Verde", "gols_a": 2, "gols_b": 2, "dias_atras": 1, "e_co_host_a": False, "e_co_host_b": False}
+    {"time_a": "México", "time_b": "África do Sul", "gols_a": 2, "gols_b": 0, "dias_atras": 13, "e_co_host_a": True, "e_co_host_b": False},
+    {"time_a": "Coreia do Sul", "time_b": "Tchéquia", "gols_a": 2, "gols_b": 1, "dias_atras": 12, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Canadá", "time_b": "Bósnia e Herzegovina", "gols_a": 1, "gols_b": 1, "dias_atras": 12, "e_co_host_a": True, "e_co_host_b": False},
+    {"time_a": "EUA", "time_b": "Paraguai", "gols_a": 4, "gols_b": 1, "dias_atras": 12, "e_co_host_a": True, "e_co_host_b": False},
+    {"time_a": "Catar", "time_b": "Suíça", "gols_a": 1, "gols_b": 1, "dias_atras": 11, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Brasil", "time_b": "Marrocos", "gols_a": 1, "gols_b": 1, "dias_atras": 11, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Austrália", "time_b": "Turquia", "gols_a": 2, "gols_b": 0, "dias_atras": 10, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Haiti", "time_b": "Escócia", "gols_a": 0, "gols_b": 1, "dias_atras": 10, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Alemanha", "time_b": "Curaçao", "gols_a": 7, "gols_b": 1, "dias_atras": 10, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Holanda", "time_b": "Japão", "gols_a": 2, "gols_b": 2, "dias_atras": 10, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Costa do Marfim", "time_b": "Equador", "gols_a": 1, "gols_b": 0, "dias_atras": 10, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Suécia", "time_b": "Tunísia", "gols_a": 5, "gols_b": 1, "dias_atras": 10, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Espanha", "time_b": "Cabo Verde", "gols_a": 0, "gols_b": 0, "dias_atras": 9, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Bélgica", "time_b": "Egito", "gols_a": 1, "gols_b": 1, "dias_atras": 9, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Uruguai", "time_b": "Arábia Saudita", "gols_a": 1, "gols_b": 1, "dias_atras": 9, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Irã", "time_b": "Nova Zelândia", "gols_a": 2, "gols_b": 2, "dias_atras": 9, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "França", "time_b": "Senegal", "gols_a": 3, "gols_b": 1, "dias_atras": 8, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Iraque", "time_b": "Noruega", "gols_a": 1, "gols_b": 4, "dias_atras": 8, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Argentina", "time_b": "Argélia", "gols_a": 3, "gols_b": 0, "dias_atras": 8, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Áustria", "time_b": "Jordânia", "gols_a": 3, "gols_b": 1, "dias_atras": 8, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Portugal", "time_b": "RD Congo", "gols_a": 1, "gols_b": 1, "dias_atras": 7, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Uzbequistão", "time_b": "Colômbia", "gols_a": 1, "gols_b": 3, "dias_atras": 7, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Inglaterra", "time_b": "Croácia", "gols_a": 4, "gols_b": 2, "dias_atras": 7, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Gana", "time_b": "Panamá", "gols_a": 1, "gols_b": 0, "dias_atras": 7, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Tchéquia", "time_b": "África do Sul", "gols_a": 1, "gols_b": 1, "dias_atras": 6, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "México", "time_b": "Coreia do Sul", "gols_a": 1, "gols_b": 0, "dias_atras": 6, "e_co_host_a": True, "e_co_host_b": False},
+    {"time_a": "Suíça", "time_b": "Bósnia e Herzegovina", "gols_a": 4, "gols_b": 1, "dias_atras": 6, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Canadá", "time_b": "Catar", "gols_a": 6, "gols_b": 0, "dias_atras": 6, "e_co_host_a": True, "e_co_host_b": False},
+    {"time_a": "Escócia", "time_b": "Marrocos", "gols_a": 0, "gols_b": 1, "dias_atras": 5, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Brasil", "time_b": "Haiti", "gols_a": 3, "gols_b": 0, "dias_atras": 5, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "EUA", "time_b": "Austrália", "gols_a": 2, "gols_b": 0, "dias_atras": 5, "e_co_host_a": True, "e_co_host_b": False},
+    {"time_a": "Turquia", "time_b": "Paraguai", "gols_a": 0, "gols_b": 1, "dias_atras": 5, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Alemanha", "time_b": "Costa do Marfim", "gols_a": 2, "gols_b": 1, "dias_atras": 4, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Equador", "time_b": "Curaçao", "gols_a": 0, "gols_b": 0, "dias_atras": 4, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Holanda", "time_b": "Suécia", "gols_a": 5, "gols_b": 1, "dias_atras": 4, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Tunísia", "time_b": "Japão", "gols_a": 0, "gols_b": 4, "dias_atras": 4, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Bélgica", "time_b": "Irã", "gols_a": 0, "gols_b": 0, "dias_atras": 3, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Nova Zelândia", "time_b": "Egito", "gols_a": 1, "gols_b": 3, "dias_atras": 3, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Espanha", "time_b": "Arábia Saudita", "gols_a": 4, "gols_b": 0, "dias_atras": 3, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Uruguai", "time_b": "Cabo Verde", "gols_a": 2, "gols_b": 2, "dias_atras": 3, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "França", "time_b": "Iraque", "gols_a": 3, "gols_b": 0, "dias_atras": 2, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Noruega", "time_b": "Senegal", "gols_a": 3, "gols_b": 2, "dias_atras": 2, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Argentina", "time_b": "Áustria", "gols_a": 2, "gols_b": 0, "dias_atras": 2, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Jordânia", "time_b": "Argélia", "gols_a": 1, "gols_b": 2, "dias_atras": 2, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Portugal", "time_b": "Uzbequistão", "gols_a": 5, "gols_b": 0, "dias_atras": 1, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Colômbia", "time_b": "RD Congo", "gols_a": 3, "gols_b": 1, "dias_atras": 1, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Inglaterra", "time_b": "Gana", "gols_a": 0, "gols_b": 0, "dias_atras": 1, "e_co_host_a": False, "e_co_host_b": False},
+    {"time_a": "Panamá", "time_b": "Croácia", "gols_a": 0, "gols_b": 2, "dias_atras": 1, "e_co_host_a": False, "e_co_host_b": False}
 ]
 
 CO_HOSTS = ["EUA", "México", "Canadá"]
@@ -269,7 +277,7 @@ class DixonColesModel:
 
     def predict_probabilities(self, time_a, time_b, odds_mercado=None, w_modelo=0.60,
                                 distancia_a=0, rest_a=4, temp=20,
-                                distancia_b=0, rest_b=4):
+                                distancia_b=0, rest_b=4, max_boost=1.5):
         """
         Gera as probabilidades incluindo o Índice de Fadiga Logística (delta)
         e a mesclagem bayesiana com odds de mercado.
@@ -296,10 +304,10 @@ class DixonColesModel:
         lambda_a *= (delta_a / delta_b)
         lambda_b *= (delta_b / delta_a)
         
-        # 2. Coeficiente de Disparidade de Elenco (Disparity Boost) - limitado a 1.5 para estabilidade
+        # 2. Coeficiente de Disparidade de Elenco (Disparity Boost) - limitado a max_boost para estabilidade
         ratio = lambda_a / lambda_b if lambda_a > lambda_b else lambda_b / lambda_a
         if ratio > 1.8:
-            boost = min(1.0 + 0.18 * (ratio - 1.8), 1.5)
+            boost = min(1.0 + 0.18 * (ratio - 1.8), max_boost)
             if lambda_a > lambda_b:
                 lambda_a *= boost
                 lambda_b *= 0.90
@@ -358,10 +366,10 @@ class DixonColesModel:
 
     def get_top_scores(self, time_a, time_b, odds_mercado=None, w_modelo=0.60,
                        distancia_a=0, rest_a=4, temp=20,
-                       distancia_b=0, rest_b=4):
+                       distancia_b=0, rest_b=4, max_boost=1.5):
         P, la, lb = self.predict_probabilities(time_a, time_b, odds_mercado, w_modelo,
                                                distancia_a, rest_a, temp,
-                                               distancia_b, rest_b)
+                                               distancia_b, rest_b, max_boost)
         prob_win_a = 0.0
         prob_draw = 0.0
         prob_win_b = 0.0

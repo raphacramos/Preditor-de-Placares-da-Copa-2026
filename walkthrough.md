@@ -107,3 +107,27 @@ Atualizamos a base de dados com as 16 partidas da segunda rodada que já foram d
      - Os demais confrontos mantiveram suas previsões iniciais por consistência estatística de alta margem.
 5. **Git Sync:** O repositório remoto foi atualizado com sucesso e todos os códigos de automação (`atualizar_modelo_rodada2.py` e `atualizar_relatorio_final_rodada2.py`) foram incluídos.
 
+---
+
+## 🏆 Finalização da 2ª Rodada e Recalibração para a 3ª Rodada (Hoje: 24 de Junho)
+
+Com o término completo da 2ª rodada da fase de grupos, realizamos as seguintes atualizações e recalibrações:
+
+1. **Atualização Completa da Base (48 Jogos):** 
+   - Adicionamos os 8 jogos finais da 2ª rodada ao banco de dados `JOGOS_CONCLUIDOS` via [atualizar_modelo_rodada3.py](file:///Users/raphaelramos/Documents/antigravity/peaceful-pasteur/repo-import/src/atualizar_modelo_rodada3.py).
+   - Deslocamos o decay temporal (`dias_atras`) de todas as partidas em `+2` dias para alinhamento absoluto com a data atual (24 de Junho).
+2. **Análise de Performance Consolidada da 2ª Rodada:**
+   - **Pontuação Total:** **320 pontos** acumulados (média de **13.33 pts por jogo**).
+   - **Aproveitamento de Desfecho:** **75%** (18 acertos em 24 confrontos).
+   - **Goleadas/Placares Exatos Cravados:**
+     - **Alemanha 2 x 1 Costa do Marfim** (30 pts)
+     - **Jordânia 1 x 2 Argélia** (30 pts)
+     - **Panamá 0 x 2 Croácia** (30 pts)
+   - **Análise de Erros:** Identificamos que a maioria dos erros decorreu de "underdogs" muito defensivos segurando favoritos em empates em bloco baixo (Curaçao, Irã, Gana, África do Sul).
+3. **Refinamentos de Calibração para a 3ª Rodada:**
+   - **Pesos de Blending Dinâmicos (`w_modelo`):** Implementamos pesos dinâmicos que variam de acordo com o status de qualificação das equipes no grupo. Jogos com motivação assimétrica ou equipes qualificadas poupando elenco delegam mais peso para as odds de mercado (até 60%), pois as odds reagem instantaneamente a confirmações de titulares/reservas. Duelos diretos decisivos preservam maior relevância do modelo estatístico (55%).
+   - **Underdog Resiliency Buffer:** Aplicamos um bônus de 5% de melhoria de defesa (redução no parâmetro `beta`) para seleções conhecidas por retrancas robustas (Irã, Curaçao, Gana, Cabo Verde, África do Sul).
+   - **Corte de Disparidade:** Reduzimos o teto do *Disparity Boost* para `1.30` para conter projeções irreais de goleadas na 3ª rodada.
+4. **Geração das Previsões:** O script [aplicar_novos_palpites_rodada3.py](file:///Users/raphaelramos/Documents/antigravity/peaceful-pasteur/repo-import/src/aplicar_novos_palpites_rodada3.py) rodou com sucesso, salvando as novas previsões otimizadas por EV em [palpites_copa_2026_rodada3.md](file:///Users/raphaelramos/Documents/antigravity/peaceful-pasteur/repo-import/relatorios/palpites_copa_2026_rodada3.md).
+5. **Git Sync:** Sincronizamos e enviamos todas as modificações para o repositório remoto.
+
