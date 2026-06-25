@@ -131,3 +131,22 @@ Com o término completo da 2ª rodada da fase de grupos, realizamos as seguintes
 4. **Geração das Previsões:** O script [aplicar_novos_palpites_rodada3.py](file:///Users/raphaelramos/Documents/antigravity/peaceful-pasteur/repo-import/src/aplicar_novos_palpites_rodada3.py) rodou com sucesso, salvando as novas previsões otimizadas por EV em [palpites_copa_2026_rodada3.md](file:///Users/raphaelramos/Documents/antigravity/peaceful-pasteur/repo-import/relatorios/palpites_copa_2026_rodada3.md).
 5. **Git Sync:** Sincronizamos e enviamos todas as modificações para o repositório remoto.
 
+---
+
+## 📅 Atualização Parcial da 3ª Rodada (Hoje: 25 de Junho)
+
+Atualizamos a base de dados com as 8 primeiras partidas da terceira rodada (jogadas em 24/Jun e início de 25/Jun):
+
+1. **Atualização Completa da Base (56 Jogos):** 
+   - Incorporamos os 8 novos resultados ao vetor `JOGOS_CONCLUIDOS` via [atualizar_modelo_rodada3_parcial.py](file:///Users/raphaelramos/Documents/antigravity/peaceful-pasteur/repo-import/src/atualizar_modelo_rodada3_parcial.py).
+   - Deslocamos o decay temporal (`dias_atras`) de todas as partidas em `+1` dia para refletir a data atual (25 de Junho).
+2. **Avaliação Parcial do Desempenho (8 Jogos):**
+   - **Pontuação:** **75 pontos** (média de **9.38 pts por jogo**).
+   - **Aproveitamento de Desfechos:** **62.5%** de acerto seco (5 acertos em 8 jogos: Bósnia, Brasil, Marrocos, México e Costa do Marfim).
+   - **Erros:** Destaque para a vitória surpresa do Equador por 2x1 contra a Alemanha (já qualificada e com time poupado) e da África do Sul por 1x0 contra a Coreia do Sul.
+3. **Calibração do Volume de Gols (`mu`):**
+   - Com o resolvedor Dixon-Coles calibrado sobre 56 partidas, o parâmetro `mu` ajustou-se para **1.4237**, mantendo a alta expectativa de gols do torneio.
+4. **Previsões Regeneradas para os 16 Jogos Restantes:**
+   - As previsões para as 16 partidas pendentes do encerramento da fase de grupos foram recalculadas utilizando o modelo treinado com os 56 jogos reais, mantendo as configurações dinâmicas de peso e a resiliência defensiva.
+5. **Sincronização:** Todas as mudanças foram comitadas e enviadas para o repositório remoto no GitHub.
+
