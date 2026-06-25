@@ -31,21 +31,21 @@ Com as primeiras 8 partidas da rodada 3 já realizadas (jogos de 24/Jun e iníci
 | **E** | Equador vs. Alemanha | New York New Jersey Stadium | *Concluído* | **0 x 2** | **2 x 1** | **0 pts** (Erro) | **Alta** | Motivação Assimétrica (w: 0.40) |
 | **E** | Curaçao vs. Costa do Marfim | Philadelphia Stadium | *Concluído* | **0 x 3** | **0 x 2** | **15 pts** (Acerto Vencedor Seco) | **Média** | Duelo Direto Decisivo (w: 0.55) |
 | **F** | Japão vs. Suécia | Dallas Stadium | Preditivo | **3 x 1** | - | EV: 10.46 pts | **Baixa** | Duelo Direto Decisivo (w: 0.55) |
-| **F** | Tunísia vs. Holanda | Kansas City Stadium | Preditivo | **0 x 4** | - | EV: 16.53 pts | **Alta** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
-| **D** | Turquia vs. EUA | Los Angeles Stadium | Preditivo | **0 x 3** | - | EV: 12.45 pts | **Média** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
+| **F** | Tunísia vs. Holanda | Kansas City Stadium | Preditivo | **0 x 4** | - | EV: 16.55 pts | **Alta** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
+| **D** | Turquia vs. EUA | Los Angeles Stadium | Preditivo | **0 x 4** | - | EV: 12.53 pts | **Média** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
 | **D** | Paraguai vs. Austrália | San Francisco Bay Stadium | Preditivo | **1 x 1** | - | EV: 8.04 pts | **Alta** | Duelo Direto Decisivo (w: 0.55) |
 | **I** | Noruega vs. França | Boston Stadium | Preditivo | **1 x 3** | - | EV: 10.35 pts | **Baixa** | Ambas Classificadas (Poupa de Elenco) (w: 0.45) |
-| **I** | Senegal vs. Iraque | Toronto Stadium | Preditivo | **3 x 0** | - | EV: 11.09 pts | **Baixa** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
-| **H** | Cabo Verde vs. Arábia Saudita | Houston Stadium | Preditivo | **2 x 0** | - | EV: 10.12 pts | **Média** | Duelo Direto Decisivo (w: 0.55) |
-| **H** | Uruguai vs. Espanha | Guadalajara Stadium | Preditivo | **0 x 3** | - | EV: 13.37 pts | **Média** | Duelo Direto Decisivo (w: 0.55) |
-| **G** | Egito vs. Irã | Seattle Stadium | Preditivo | **2 x 0** | - | EV: 9.05 pts | **Média** | Duelo Direto Decisivo (w: 0.55) |
-| **G** | Nova Zelândia vs. Bélgica | Vancouver Stadium | Preditivo | **0 x 2** | - | EV: 13.14 pts | **Média** | Duelo Direto Decisivo (w: 0.55) |
+| **I** | Senegal vs. Iraque | Toronto Stadium | Preditivo | **3 x 0** | - | EV: 11.17 pts | **Baixa** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
+| **H** | Cabo Verde vs. Arábia Saudita | Houston Stadium | Preditivo | **2 x 0** | - | EV: 10.25 pts | **Média** | Duelo Direto Decisivo (w: 0.55) |
+| **H** | Uruguai vs. Espanha | Guadalajara Stadium | Preditivo | **0 x 3** | - | EV: 13.41 pts | **Média** | Duelo Direto Decisivo (w: 0.55) |
+| **G** | Egito vs. Irã | Seattle Stadium | Preditivo | **2 x 1** | - | EV: 9.11 pts | **Média** | Duelo Direto Decisivo (w: 0.55) |
+| **G** | Nova Zelândia vs. Bélgica | Vancouver Stadium | Preditivo | **0 x 3** | - | EV: 13.18 pts | **Baixa** | Duelo Direto Decisivo (w: 0.55) |
 | **L** | Panamá vs. Inglaterra | New York New Jersey Stadium | Preditivo | **0 x 3** | - | EV: 15.55 pts | **Alta** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
-| **L** | Croácia vs. Gana | Philadelphia Stadium | Preditivo | **1 x 0** | - | EV: 7.60 pts | **Alta** | Duelo Direto Decisivo (w: 0.55) |
+| **L** | Croácia vs. Gana | Philadelphia Stadium | Preditivo | **1 x 0** | - | EV: 7.42 pts | **Alta** | Duelo Direto Decisivo (w: 0.55) |
 | **K** | Colômbia vs. Portugal | Miami Stadium | Preditivo | **1 x 2** | - | EV: 9.40 pts | **Média** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
-| **K** | RD Congo vs. Uzbequistão | Atlanta Stadium | Preditivo | **2 x 0** | - | EV: 9.38 pts | **Média** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
+| **K** | RD Congo vs. Uzbequistão | Atlanta Stadium | Preditivo | **2 x 0** | - | EV: 9.37 pts | **Média** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
 | **J** | Argélia vs. Áustria | Kansas City Stadium | Preditivo | **1 x 2** | - | EV: 8.04 pts | **Média** | Duelo Direto Decisivo (w: 0.55) |
-| **J** | Jordânia vs. Argentina | Dallas Stadium | Preditivo | **0 x 4** | - | EV: 15.88 pts | **Alta** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
+| **J** | Jordânia vs. Argentina | Dallas Stadium | Preditivo | **0 x 4** | - | EV: 15.96 pts | **Alta** | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
 
 ---
 
@@ -128,19 +128,19 @@ Com as primeiras 8 partidas da rodada 3 já realizadas (jogos de 24/Jun e iníci
 *   **Tunísia 0 x 4 Holanda**
     *   **Estádio:** Kansas City Stadium (Temperatura: 24°C)
     *   **Status:** Preditivo (25/Jun) [Modelo Calibrado com 56 Jogos]
-    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 16.53 pts) sob o modelo Dixon-Coles recalibrado com Blending de 40% (Motivação Assimétrica (Misto de Titulares/Reservas)). Médias de gols projetadas: Tunísia (0.47) vs. Holanda (5.29). Fatores Físicos: Tunísia viajou 1583 km com 5 dias de descanso; Holanda viajou 10 km com 5 dias de descanso. 
-    *   **Probabilidades:** Vitória Tunísia: 2.5% | Empate: 7.7% | Vitória Holanda: 89.8%
-    *   **Top 3 Placares mais Prováveis:** 0 x 5 (18.00%), 0 x 4 (17.00%), 0 x 3 (12.84%)
+    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 16.55 pts) sob o modelo Dixon-Coles recalibrado com Blending de 40% (Motivação Assimétrica (Misto de Titulares/Reservas)). Médias de gols projetadas: Tunísia (0.51) vs. Holanda (5.72). Fatores Físicos: Tunísia viajou 1583 km com 5 dias de descanso; Holanda viajou 10 km com 5 dias de descanso. 
+    *   **Probabilidades:** Vitória Tunísia: 2.5% | Empate: 7.5% | Vitória Holanda: 90.0%
+    *   **Top 3 Placares mais Prováveis:** 0 x 5 (19.07%), 0 x 4 (16.68%), 0 x 3 (11.67%)
     *   **Nível de Confiança:** Alta
 
 ### **Grupo D**
 
-*   **Turquia 0 x 3 EUA**
+*   **Turquia 0 x 4 EUA**
     *   **Estádio:** Los Angeles Stadium (Temperatura: 22°C)
     *   **Status:** Preditivo (25/Jun) [Modelo Calibrado com 56 Jogos]
-    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 12.45 pts) sob o modelo Dixon-Coles recalibrado com Blending de 40% (Motivação Assimétrica (Misto de Titulares/Reservas)). Médias de gols projetadas: Turquia (0.25) vs. EUA (3.87). Fatores Físicos: Turquia viajou 605 km com 6 dias de descanso; EUA viajou 56 km com 6 dias de descanso. 
-    *   **Probabilidades:** Vitória Turquia: 16.0% | Empate: 16.3% | Vitória EUA: 67.7%
-    *   **Top 3 Placares mais Prováveis:** 0 x 3 (14.01%), 0 x 4 (13.54%), 0 x 2 (10.87%)
+    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 12.53 pts) sob o modelo Dixon-Coles recalibrado com Blending de 40% (Motivação Assimétrica (Misto de Titulares/Reservas)). Médias de gols projetadas: Turquia (0.27) vs. EUA (4.18). Fatores Físicos: Turquia viajou 605 km com 6 dias de descanso; EUA viajou 56 km com 6 dias de descanso. 
+    *   **Probabilidades:** Vitória Turquia: 16.0% | Empate: 16.0% | Vitória EUA: 68.0%
+    *   **Top 3 Placares mais Prováveis:** 0 x 4 (14.06%), 0 x 3 (13.47%), 0 x 5 (11.74%)
     *   **Nível de Confiança:** Média
 
 *   **Paraguai 1 x 1 Austrália**
@@ -164,9 +164,9 @@ Com as primeiras 8 partidas da rodada 3 já realizadas (jogos de 24/Jun e iníci
 *   **Senegal 3 x 0 Iraque**
     *   **Estádio:** Toronto Stadium (Temperatura: 18°C)
     *   **Status:** Preditivo (26/Jun) [Modelo Calibrado com 56 Jogos]
-    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 11.09 pts) sob o modelo Dixon-Coles recalibrado com Blending de 40% (Motivação Assimétrica (Misto de Titulares/Reservas)). Médias de gols projetadas: Senegal (2.78) vs. Iraque (0.79). Fatores Físicos: Senegal viajou 539 km com 4 dias de descanso; Iraque viajou 655 km com 4 dias de descanso. 
-    *   **Probabilidades:** Vitória Senegal: 62.0% | Empate: 23.2% | Vitória Iraque: 14.8%
-    *   **Top 3 Placares mais Prováveis:** 1 x 1 (10.84%), 2 x 0 (9.43%), 3 x 0 (8.73%)
+    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 11.17 pts) sob o modelo Dixon-Coles recalibrado com Blending de 40% (Motivação Assimétrica (Misto de Titulares/Reservas)). Médias de gols projetadas: Senegal (3.24) vs. Iraque (0.92). Fatores Físicos: Senegal viajou 539 km com 4 dias de descanso; Iraque viajou 655 km com 4 dias de descanso. 
+    *   **Probabilidades:** Vitória Senegal: 63.0% | Empate: 22.3% | Vitória Iraque: 14.7%
+    *   **Top 3 Placares mais Prováveis:** 1 x 1 (9.55%), 3 x 0 (7.92%), 2 x 0 (7.33%)
     *   **Nível de Confiança:** Baixa
 
 ### **Grupo H**
@@ -174,36 +174,36 @@ Com as primeiras 8 partidas da rodada 3 já realizadas (jogos de 24/Jun e iníci
 *   **Cabo Verde 2 x 0 Arábia Saudita**
     *   **Estádio:** Houston Stadium (Temperatura: 28°C)
     *   **Status:** Preditivo (26/Jun) [Modelo Calibrado com 56 Jogos]
-    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 10.12 pts) sob o modelo Dixon-Coles recalibrado com Blending de 55% (Duelo Direto Decisivo). Médias de gols projetadas: Cabo Verde (1.80) vs. Arábia Saudita (0.59). Fatores Físicos: Cabo Verde viajou 1276 km com 5 dias de descanso; Arábia Saudita viajou 234 km com 5 dias de descanso. O modelo aplicou o ajuste de Resiliência Defensiva para o bloco baixo deste confronto. 
-    *   **Probabilidades:** Vitória Cabo Verde: 52.8% | Empate: 27.4% | Vitória Arábia Saudita: 19.7%
-    *   **Top 3 Placares mais Prováveis:** 1 x 1 (12.40%), 1 x 0 (12.39%), 2 x 0 (12.24%)
+    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 10.25 pts) sob o modelo Dixon-Coles recalibrado com Blending de 55% (Duelo Direto Decisivo). Médias de gols projetadas: Cabo Verde (2.10) vs. Arábia Saudita (0.68). Fatores Físicos: Cabo Verde viajou 1276 km com 5 dias de descanso; Arábia Saudita viajou 234 km com 5 dias de descanso. O modelo aplicou o ajuste de Resiliência Defensiva para o bloco baixo deste confronto. 
+    *   **Probabilidades:** Vitória Cabo Verde: 54.7% | Empate: 25.8% | Vitória Arábia Saudita: 19.6%
+    *   **Top 3 Placares mais Prováveis:** 1 x 1 (12.26%), 2 x 0 (11.13%), 1 x 0 (9.50%)
     *   **Nível de Confiança:** Média
 
 *   **Uruguai 0 x 3 Espanha**
     *   **Estádio:** Guadalajara Stadium (Temperatura: 24°C)
     *   **Status:** Preditivo (26/Jun) [Modelo Calibrado com 56 Jogos]
-    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 13.37 pts) sob o modelo Dixon-Coles recalibrado com Blending de 55% (Duelo Direto Decisivo). Médias de gols projetadas: Uruguai (0.27) vs. Espanha (3.41). Fatores Físicos: Uruguai viajou 1705 km com 5 dias de descanso; Espanha viajou 2387 km com 5 dias de descanso. 
-    *   **Probabilidades:** Vitória Uruguai: 11.2% | Empate: 16.4% | Vitória Espanha: 72.5%
-    *   **Top 3 Placares mais Prováveis:** 0 x 3 (15.12%), 0 x 2 (13.29%), 0 x 4 (12.91%)
+    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 13.41 pts) sob o modelo Dixon-Coles recalibrado com Blending de 55% (Duelo Direto Decisivo). Médias de gols projetadas: Uruguai (0.29) vs. Espanha (3.69). Fatores Físicos: Uruguai viajou 1705 km com 5 dias de descanso; Espanha viajou 2387 km com 5 dias de descanso. 
+    *   **Probabilidades:** Vitória Uruguai: 11.1% | Empate: 15.9% | Vitória Espanha: 73.0%
+    *   **Top 3 Placares mais Prováveis:** 0 x 3 (14.77%), 0 x 4 (13.61%), 0 x 2 (12.01%)
     *   **Nível de Confiança:** Média
 
 ### **Grupo G**
 
-*   **Egito 2 x 0 Irã**
+*   **Egito 2 x 1 Irã**
     *   **Estádio:** Seattle Stadium (Temperatura: 18°C)
     *   **Status:** Preditivo (27/Jun) [Modelo Calibrado com 56 Jogos]
-    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 9.05 pts) sob o modelo Dixon-Coles recalibrado com Blending de 55% (Duelo Direto Decisivo). Médias de gols projetadas: Egito (1.39) vs. Irã (0.93). Fatores Físicos: Egito viajou 368 km com 6 dias de descanso; Irã viajou 1735 km com 6 dias de descanso. O modelo aplicou o ajuste de Resiliência Defensiva para o bloco baixo deste confronto. 
-    *   **Probabilidades:** Vitória Egito: 47.4% | Empate: 30.2% | Vitória Irã: 22.4%
-    *   **Top 3 Placares mais Prováveis:** 1 x 1 (14.19%), 1 x 0 (12.26%), 0 x 0 (11.39%)
+    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 9.11 pts) sob o modelo Dixon-Coles recalibrado com Blending de 55% (Duelo Direto Decisivo). Médias de gols projetadas: Egito (1.50) vs. Irã (1.00). Fatores Físicos: Egito viajou 368 km com 6 dias de descanso; Irã viajou 1735 km com 6 dias de descanso. O modelo aplicou o ajuste de Resiliência Defensiva para o bloco baixo deste confronto. 
+    *   **Probabilidades:** Vitória Egito: 48.0% | Empate: 29.4% | Vitória Irã: 22.6%
+    *   **Top 3 Placares mais Prováveis:** 1 x 1 (14.05%), 1 x 0 (10.75%), 0 x 0 (9.93%)
     *   **Nível de Confiança:** Média
 
-*   **Nova Zelândia 0 x 2 Bélgica**
+*   **Nova Zelândia 0 x 3 Bélgica**
     *   **Estádio:** Vancouver Stadium (Temperatura: 18°C)
     *   **Status:** Preditivo (27/Jun) [Modelo Calibrado com 56 Jogos]
-    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 13.14 pts) sob o modelo Dixon-Coles recalibrado com Blending de 55% (Duelo Direto Decisivo). Médias de gols projetadas: Nova Zelândia (0.75) vs. Bélgica (2.60). Fatores Físicos: Nova Zelândia viajou 1907 km com 6 dias de descanso; Bélgica viajou 210 km com 6 dias de descanso. 
-    *   **Probabilidades:** Vitória Nova Zelândia: 9.0% | Empate: 18.4% | Vitória Bélgica: 72.5%
-    *   **Top 3 Placares mais Prováveis:** 0 x 2 (12.05%), 0 x 3 (10.45%), 1 x 2 (9.09%)
-    *   **Nível de Confiança:** Média
+    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 13.18 pts) sob o modelo Dixon-Coles recalibrado com Blending de 55% (Duelo Direto Decisivo). Médias de gols projetadas: Nova Zelândia (0.88) vs. Bélgica (3.03). Fatores Físicos: Nova Zelândia viajou 1907 km com 6 dias de descanso; Bélgica viajou 210 km com 6 dias de descanso. 
+    *   **Probabilidades:** Vitória Nova Zelândia: 8.8% | Empate: 17.1% | Vitória Bélgica: 74.0%
+    *   **Top 3 Placares mais Prováveis:** 0 x 3 (9.73%), 0 x 2 (9.62%), 1 x 3 (8.57%)
+    *   **Nível de Confiança:** Baixa
 
 ### **Grupo L**
 
@@ -218,9 +218,9 @@ Com as primeiras 8 partidas da rodada 3 já realizadas (jogos de 24/Jun e iníci
 *   **Croácia 1 x 0 Gana**
     *   **Estádio:** Philadelphia Stadium (Temperatura: 24°C)
     *   **Status:** Preditivo (27/Jun) [Modelo Calibrado com 56 Jogos]
-    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 7.60 pts) sob o modelo Dixon-Coles recalibrado com Blending de 55% (Duelo Direto Decisivo). Médias de gols projetadas: Croácia (0.65) vs. Gana (1.07). Fatores Físicos: Croácia viajou 202 km com 4 dias de descanso; Gana viajou 378 km com 4 dias de descanso. O modelo aplicou o ajuste de Resiliência Defensiva para o bloco baixo deste confronto. 
-    *   **Probabilidades:** Vitória Croácia: 34.1% | Empate: 32.6% | Vitória Gana: 33.3%
-    *   **Top 3 Placares mais Prováveis:** 0 x 0 (17.76%), 1 x 0 (16.56%), 0 x 1 (13.36%)
+    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 7.42 pts) sob o modelo Dixon-Coles recalibrado com Blending de 55% (Duelo Direto Decisivo). Médias de gols projetadas: Croácia (0.70) vs. Gana (1.15). Fatores Físicos: Croácia viajou 202 km com 4 dias de descanso; Gana viajou 378 km com 4 dias de descanso. O modelo aplicou o ajuste de Resiliência Defensiva para o bloco baixo deste confronto. 
+    *   **Probabilidades:** Vitória Croácia: 34.2% | Empate: 31.7% | Vitória Gana: 34.0%
+    *   **Top 3 Placares mais Prováveis:** 0 x 0 (16.00%), 1 x 0 (15.24%), 1 x 1 (13.22%)
     *   **Nível de Confiança:** Alta
 
 ### **Grupo K**
@@ -236,9 +236,9 @@ Com as primeiras 8 partidas da rodada 3 já realizadas (jogos de 24/Jun e iníci
 *   **RD Congo 2 x 0 Uzbequistão**
     *   **Estádio:** Atlanta Stadium (Temperatura: 24°C)
     *   **Status:** Preditivo (27/Jun) [Modelo Calibrado com 56 Jogos]
-    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 9.38 pts) sob o modelo Dixon-Coles recalibrado com Blending de 40% (Motivação Assimétrica (Misto de Titulares/Reservas)). Médias de gols projetadas: RD Congo (1.75) vs. Uzbequistão (0.81). Fatores Físicos: RD Congo viajou 1127 km com 4 dias de descanso; Uzbequistão viajou 2 km com 4 dias de descanso. 
-    *   **Probabilidades:** Vitória RD Congo: 49.5% | Empate: 28.1% | Vitória Uzbequistão: 22.4%
-    *   **Top 3 Placares mais Prováveis:** 1 x 1 (13.36%), 1 x 0 (10.29%), 2 x 0 (10.26%)
+    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 9.37 pts) sob o modelo Dixon-Coles recalibrado com Blending de 40% (Motivação Assimétrica (Misto de Titulares/Reservas)). Médias de gols projetadas: RD Congo (2.04) vs. Uzbequistão (0.94). Fatores Físicos: RD Congo viajou 1127 km com 4 dias de descanso; Uzbequistão viajou 2 km com 4 dias de descanso. 
+    *   **Probabilidades:** Vitória RD Congo: 50.7% | Empate: 27.0% | Vitória Uzbequistão: 22.3%
+    *   **Top 3 Placares mais Prováveis:** 1 x 1 (12.86%), 2 x 0 (8.97%), 2 x 1 (8.44%)
     *   **Nível de Confiança:** Média
 
 ### **Grupo J**
@@ -254,7 +254,7 @@ Com as primeiras 8 partidas da rodada 3 já realizadas (jogos de 24/Jun e iníci
 *   **Jordânia 0 x 4 Argentina**
     *   **Estádio:** Dallas Stadium (Temperatura: 26°C)
     *   **Status:** Preditivo (27/Jun) [Modelo Calibrado com 56 Jogos]
-    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 15.88 pts) sob o modelo Dixon-Coles recalibrado com Blending de 40% (Motivação Assimétrica (Misto de Titulares/Reservas)). Médias de gols projetadas: Jordânia (0.09) vs. Argentina (5.19). Fatores Físicos: Jordânia viajou 2607 km com 5 dias de descanso; Argentina viajou 741 km com 5 dias de descanso. 
-    *   **Probabilidades:** Vitória Jordânia: 5.7% | Empate: 11.4% | Vitória Argentina: 82.9%
-    *   **Top 3 Placares mais Prováveis:** 0 x 5 (23.15%), 0 x 4 (22.30%), 0 x 3 (17.19%)
+    *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 15.96 pts) sob o modelo Dixon-Coles recalibrado com Blending de 40% (Motivação Assimétrica (Misto de Titulares/Reservas)). Médias de gols projetadas: Jordânia (0.09) vs. Argentina (5.61). Fatores Físicos: Jordânia viajou 2607 km com 5 dias de descanso; Argentina viajou 741 km com 5 dias de descanso. 
+    *   **Probabilidades:** Vitória Jordânia: 5.7% | Empate: 11.3% | Vitória Argentina: 83.0%
+    *   **Top 3 Placares mais Prováveis:** 0 x 5 (25.39%), 0 x 4 (22.65%), 0 x 3 (16.16%)
     *   **Nível de Confiança:** Alta

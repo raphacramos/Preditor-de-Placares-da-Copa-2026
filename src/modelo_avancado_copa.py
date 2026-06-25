@@ -285,7 +285,8 @@ class DixonColesModel:
 
     def predict_probabilities(self, time_a, time_b, odds_mercado=None, w_modelo=0.60,
                                 distancia_a=0, rest_a=4, temp=20,
-                                distancia_b=0, rest_b=4, max_boost=1.5):
+                                distancia_b=0, rest_b=4, max_boost=1.5,
+                                desperate_a=False, desperate_b=False):
         """
         Gera as probabilidades incluindo o Índice de Fadiga Logística (delta)
         e a mesclagem bayesiana com odds de mercado.
@@ -300,6 +301,14 @@ class DixonColesModel:
         lambda_a = self.mu * self.alphas[idx_a] * self.betas[idx_b] * factor_a
         lambda_b = self.mu * self.alphas[idx_b] * self.betas[idx_a] * factor_b
         
+        # Ajuste de Desespero (Mais ofensivos, porém mais expostos)
+        if desperate_a:
+            lambda_a *= 1.08
+            lambda_b *= 1.08
+        if desperate_b:
+            lambda_b *= 1.08
+            lambda_a *= 1.08
+            
         # 1. Aplicação do Índice Dinâmico de Fadiga (delta)
         fatiga_a = (distancia_a / 1000.0) - rest_a + max(temp - 20, 0) / 10.0
         fatiga_b = (distancia_b / 1000.0) - rest_b + max(temp - 20, 0) / 10.0
@@ -374,10 +383,12 @@ class DixonColesModel:
 
     def get_top_scores(self, time_a, time_b, odds_mercado=None, w_modelo=0.60,
                        distancia_a=0, rest_a=4, temp=20,
-                       distancia_b=0, rest_b=4, max_boost=1.5):
+                       distancia_b=0, rest_b=4, max_boost=1.5,
+                       desperate_a=False, desperate_b=False):
         P, la, lb = self.predict_probabilities(time_a, time_b, odds_mercado, w_modelo,
                                                distancia_a, rest_a, temp,
-                                               distancia_b, rest_b, max_boost)
+                                               distancia_b, rest_b, max_boost,
+                                               desperate_a, desperate_b)
         prob_win_a = 0.0
         prob_draw = 0.0
         prob_win_b = 0.0

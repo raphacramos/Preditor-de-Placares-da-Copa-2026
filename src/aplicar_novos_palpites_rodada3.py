@@ -177,6 +177,12 @@ def calcular_pontos(xp, yp, xr, yr):
 QUALIFIED = {"México", "EUA", "Alemanha", "França", "Noruega", "Argentina", "Colômbia"}
 ELIMINATED = {"Haiti", "Turquia", "Tunísia", "Senegal", "Iraque", "Uzbequistão", "Panamá"}
 DEFENSIVE_UNDERDOGS = {"Irã", "Curaçao", "Gana", "Cabo Verde", "África do Sul"}
+DESPERATE_TEAMS = {
+    "Tunísia", "Turquia", "Senegal", "Iraque", 
+    "Arábia Saudita", "Cabo Verde", "Uruguai", 
+    "Irã", "Nova Zelândia", "Bélgica", "Croácia", 
+    "RD Congo", "Uzbequistão", "Jordânia"
+}
 
 def get_blend_weight(t_a, t_b):
     if t_a in QUALIFIED and t_b in QUALIFIED:
@@ -217,11 +223,12 @@ for grupo, t_a, t_b, stadium, dia_jogo, temp in jogos_rodada3:
     # Determina o peso de blending de forma dinâmica baseado no status das equipes
     w_modelo, justificativa_peso = get_blend_weight(t_a, t_b)
     
-    # Nos jogos da terceira rodada, limitamos o disparity boost a 1.30
+    # Nos jogos da terceira rodada, limitamos o disparity boost a 1.30 e aplicamos o desespero
     P, la, lb = model.predict_probabilities(
         t_a, t_b, odds_mercado=odds, w_modelo=w_modelo,
         distancia_a=dist_a, rest_a=rest_a, temp=temp,
-        distancia_b=dist_b, rest_b=rest_b, max_boost=1.30
+        distancia_b=dist_b, rest_b=rest_b, max_boost=1.30,
+        desperate_a=(t_a in DESPERATE_TEAMS), desperate_b=(t_b in DESPERATE_TEAMS)
     )
     
     # Otimização por Valor Esperado (EV) do Bolão
@@ -240,7 +247,8 @@ for grupo, t_a, t_b, stadium, dia_jogo, temp in jogos_rodada3:
     res = model.get_top_scores(
         t_a, t_b, odds_mercado=odds, w_modelo=w_modelo,
         distancia_a=dist_a, rest_a=rest_a, temp=temp,
-        distancia_b=dist_b, rest_b=rest_b, max_boost=1.30
+        distancia_b=dist_b, rest_b=rest_b, max_boost=1.30,
+        desperate_a=(t_a in DESPERATE_TEAMS), desperate_b=(t_b in DESPERATE_TEAMS)
     )
     
     prob_win_a = sum(P[x, y] for x in range(6) for y in range(6) if x > y)

@@ -5,7 +5,7 @@ import numpy as np
 
 # Adiciona o diretório atual ao path para importação
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-from aplicar_novos_palpites_rodada3 import model, ESTADIOS, QGS, ULTIMO_JOGO, ODDS_MERCADO, haversine, calcular_pontos, JOGOS_CONCLUIDOS, get_blend_weight, DEFENSIVE_UNDERDOGS
+from aplicar_novos_palpites_rodada3 import model, ESTADIOS, QGS, ULTIMO_JOGO, ODDS_MERCADO, haversine, calcular_pontos, JOGOS_CONCLUIDOS, get_blend_weight, DEFENSIVE_UNDERDOGS, DESPERATE_TEAMS
 
 # 8 jogos que já aconteceram com seus palpites originais e resultados reais
 jogos_concluidos_detalhes = [
@@ -128,7 +128,8 @@ for grupo, t_a, t_b, stadium, dia_jogo, temp in jogos_restantes:
     P, la, lb = model.predict_probabilities(
         t_a, t_b, odds_mercado=odds, w_modelo=w_modelo,
         distancia_a=dist_a, rest_a=rest_a, temp=temp,
-        distancia_b=dist_b, rest_b=rest_b, max_boost=1.30
+        distancia_b=dist_b, rest_b=rest_b, max_boost=1.30,
+        desperate_a=(t_a in DESPERATE_TEAMS), desperate_b=(t_b in DESPERATE_TEAMS)
     )
     
     best_ev = -1
@@ -146,7 +147,8 @@ for grupo, t_a, t_b, stadium, dia_jogo, temp in jogos_restantes:
     res = model.get_top_scores(
         t_a, t_b, odds_mercado=odds, w_modelo=w_modelo,
         distancia_a=dist_a, rest_a=rest_a, temp=temp,
-        distancia_b=dist_b, rest_b=rest_b, max_boost=1.30
+        distancia_b=dist_b, rest_b=rest_b, max_boost=1.30,
+        desperate_a=(t_a in DESPERATE_TEAMS), desperate_b=(t_b in DESPERATE_TEAMS)
     )
     
     prob_win_a = sum(P[x, y] for x in range(6) for y in range(6) if x > y)
