@@ -201,10 +201,26 @@ for team in DEFENSIVE_UNDERDOGS:
         idx = model.team_to_idx[team]
         model.betas[idx] *= 0.95  # Redução de 5% na vulnerabilidade defensiva
 
+# Ajuste para equipes com escalações alternativas / reservas (poupa de elenco)
+RESERVAS_TEAMS = {
+    "Noruega": {"alpha_mult": 0.35, "beta_mult": 1.25},  # Noruega vai com reservas
+    "Espanha": {"alpha_mult": 0.70, "beta_mult": 1.15}   # Espanha poupa mas tem profundidade de elenco
+}
+for team, mults in RESERVAS_TEAMS.items():
+    if team in model.team_to_idx:
+        idx = model.team_to_idx[team]
+        model.alphas[idx] *= mults["alpha_mult"]
+        model.betas[idx] *= mults["beta_mult"]
+
 print(f"Modelo Dixon-Coles calibrado com {len(JOGOS_CONCLUIDOS)} jogos.")
 print(f"Parâmetro global de gols (mu): {model.mu:.4f}")
 print(f"Fator Casa (gamma): {model.gamma:.4f}")
 print(f"Dixon-Coles rho: {model.rho:.4f}")
+
+# Dicionário de overrides manuais para placares específicos (por exemplo, time reserva/ajustes do usuário)
+OVERRIED_PREDICTIONS = {
+    ("Noruega", "França"): (0, 3)
+}
 
 previsoes = []
 for grupo, t_a, t_b, stadium, dia_jogo, temp in jogos_rodada3:
@@ -244,6 +260,9 @@ for grupo, t_a, t_b, stadium, dia_jogo, temp in jogos_rodada3:
                 best_ev = ev
                 best_placar = (xp, yp)
                 
+    if (t_a, t_b) in OVERRIED_PREDICTIONS:
+        best_placar = OVERRIED_PREDICTIONS[(t_a, t_b)]
+        
     res = model.get_top_scores(
         t_a, t_b, odds_mercado=odds, w_modelo=w_modelo,
         distancia_a=dist_a, rest_a=rest_a, temp=temp,
