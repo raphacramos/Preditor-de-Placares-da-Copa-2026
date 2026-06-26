@@ -28,8 +28,8 @@ Este relatório apresenta a análise estatística e tática detalhada para todas
 | **D** | Paraguai vs. Austrália | San Francisco Bay Stadium | Preditivo | **1 x 1** | **Alta** | 8.05 pts | Duelo Direto Decisivo (w: 0.55) |
 | **I** | Noruega vs. França | Boston Stadium | Preditivo | **0 x 3** | **Média** | 12.44 pts | Ambas Classificadas (Poupa de Elenco) (w: 0.45) |
 | **I** | Senegal vs. Iraque | Toronto Stadium | Preditivo | **3 x 0** | **Baixa** | 11.15 pts | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
-| **H** | Cabo Verde vs. Arábia Saudita | Houston Stadium | Preditivo | **2 x 0** | **Média** | 10.21 pts | Duelo Direto Decisivo (w: 0.55) |
-| **H** | Uruguai vs. Espanha | Guadalajara Stadium | Preditivo | **0 x 2** | **Média** | 12.75 pts | Duelo Direto Decisivo (w: 0.55) |
+| **H** | Cabo Verde vs. Arábia Saudita | Houston Stadium | Preditivo | **2 x 1** | **Média** | 10.21 pts | Duelo Direto Decisivo (w: 0.55) |
+| **H** | Uruguai vs. Espanha | Guadalajara Stadium | Preditivo | **1 x 2** | **Média** | 12.75 pts | Duelo Direto Decisivo (w: 0.55) |
 | **G** | Egito vs. Irã | Seattle Stadium | Preditivo | **2 x 1** | **Média** | 9.09 pts | Duelo Direto Decisivo (w: 0.55) |
 | **G** | Nova Zelândia vs. Bélgica | Vancouver Stadium | Preditivo | **0 x 3** | **Baixa** | 13.16 pts | Duelo Direto Decisivo (w: 0.55) |
 | **L** | Panamá vs. Inglaterra | New York New Jersey Stadium | Preditivo | **0 x 3** | **Alta** | 15.52 pts | Motivação Assimétrica (Misto de Titulares/Reservas) (w: 0.40) |
@@ -171,7 +171,7 @@ Este relatório apresenta a análise estatística e tática detalhada para todas
 
 ### **Grupo H**
 
-*   **Cabo Verde 2 x 0 Arábia Saudita**
+*   **Cabo Verde 2 x 1 Arábia Saudita**
     *   **Estádio:** Houston Stadium (Temperatura: 28°C)
     *   **Status:** Preditivo (26/Jun)
     *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 10.21 pts) para o bolão com blending de 55% modelo / 45% odds de mercado (Duelo Direto Decisivo). Médias de gols projetadas: Cabo Verde (2.09) vs. Arábia Saudita (0.69). Fatores Físicos: Cabo Verde viajou 1276 km com 5 dias de descanso; Arábia Saudita viajou 234 km com 5 dias de descanso. O modelo aplicou o ajuste de Resiliência Defensiva para o bloco baixo deste confronto, contendo o ímpeto de gols. 
@@ -179,7 +179,7 @@ Este relatório apresenta a análise estatística e tática detalhada para todas
     *   **Top 3 Placares mais Prováveis:** 1 x 1 (12.31%), 2 x 0 (11.08%), 1 x 0 (9.50%)
     *   **Nível de Confiança:** Média
 
-*   **Uruguai 0 x 2 Espanha**
+*   **Uruguai 1 x 2 Espanha**
     *   **Estádio:** Guadalajara Stadium (Temperatura: 24°C)
     *   **Status:** Preditivo (26/Jun)
     *   **Justificativa:** Palpite otimizado por Valor Esperado (EV: 12.75 pts) para o bolão com blending de 55% modelo / 45% odds de mercado (Duelo Direto Decisivo). Médias de gols projetadas: Uruguai (0.34) vs. Espanha (2.57). Fatores Físicos: Uruguai viajou 1705 km com 5 dias de descanso; Espanha viajou 2387 km com 5 dias de descanso. 

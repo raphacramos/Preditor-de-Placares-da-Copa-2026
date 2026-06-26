@@ -219,7 +219,9 @@ print(f"Dixon-Coles rho: {model.rho:.4f}")
 
 # Dicionário de overrides manuais para placares específicos (por exemplo, time reserva/ajustes do usuário)
 OVERRIED_PREDICTIONS = {
-    ("Noruega", "França"): (0, 3)
+    ("Noruega", "França"): (0, 3),
+    ("Uruguai", "Espanha"): (1, 2),
+    ("Cabo Verde", "Arábia Saudita"): (2, 1)
 }
 
 previsoes = []
